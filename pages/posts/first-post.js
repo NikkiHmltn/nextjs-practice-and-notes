@@ -37,6 +37,18 @@ export default function FirstPost(){
                         placeholder="blur" // Optional blur-up while loading
                     />
                     <Link href="/">Back to Home</Link>
+                    {/* Below is how to dynamic Link to page */}
+                    {/* <Link href={`/blog/${post.id}`}>{post.title}</Link> */}
+
+                    {/* Altneratively you can Link as object shown below */}
+                    {/* <Link
+                            href={{
+                            pathname: '/blog/[id]',
+                            query: { id: post.id },
+                            }}
+                        >
+                            {post.title}
+                        </Link> */}
                 </h1>
             </Layout>
         </>
