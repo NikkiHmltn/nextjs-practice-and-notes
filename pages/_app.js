@@ -14,6 +14,10 @@ You can place the global CSS file anywhere and use any name.
 */
 import '../styles/global.css'
 
+// Dynamic routes can be extended to catch all paths by adding three dots (...) inside the brackets. For example:
+
+// pages/posts/[...id].js matches /posts/a, but also /posts/a/b, /posts/a/b/c and so on.
+
 export default function App({Component, pageProps}) {
     return(
         <Component {...pageProps} />
